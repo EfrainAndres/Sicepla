@@ -42,10 +42,6 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapPublicRoutes();
 
         $this->mapConfigRoutes();
-
-        $this->mapSchoolRoutes();
-
-        $this->mapFinanceRoutes();
     }
 
     /**
@@ -77,19 +73,6 @@ class RouteServiceProvider extends ServiceProvider
             ->group(base_path('routes/config.php'));
     }
 
-    protected function mapSchoolRoutes()
-    {
-        Route::middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/school.php'));
-    }
-
-    protected function mapFinanceRoutes()
-    {
-        Route::middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/finance.php'));
-    }
 
     /**
      * Define the "api" routes for the application.

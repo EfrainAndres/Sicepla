@@ -11,14 +11,13 @@
         <div class="row bs-reset">
             <div class="col-md-6 bs-reset mt-login-5-bsfix">
                 <div class="login-bg" style="background-image:url({{ asset('assets/pages/img/login/bg1.jpg') }})">
-                    <img class="login-logo" src="{{ asset('assets/pages/img/login/logo.png') }}" />
                 </div>
             </div>
             <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
                 <div class="login-content">
-                    <h1>{{ $title or config('app.name') }}</h1>
+                    <h1>SICEPLA</h1>
 
-                    <p> {{ $description or config('app.description') }} </p>
+                    <p> Sistema de Información para el Apoyo de Alertas </p>
 
                     {!! Form::open(['role' => 'form', 'id' => 'form-login', 'novalidate', 'method' => 'POST', 'url' => route('login')]) !!}
 
@@ -53,7 +52,7 @@
                     <div class="row bs-reset">
                         <div class="col-xs-12 bs-reset">
                             <div class="login-copyright text-right">
-                                <p>Copyright © {{ $footer or config('app.author') }}</p>
+                                <p>Copyright © SICEPLA</p>
                             </div>
                         </div>
                     </div>
